@@ -23,6 +23,18 @@ biases = [bias1, bias2, bias3]
 #         neuron_output += input_value * weight
 #     neuron_output += bias
 #     layer_outputs.append(neuron_output)
+# Example: adding another layer
+
+# Layer 2
+weights2 = [
+    [0.1, -0.14, 0.5],
+    [-0.5, 0.12, -0.33],
+    [-0.44, 0.73, -0.13]
+]
+biases2 = [-1, 2, -0.5]
+
+layer2_output = np.dot(weights2, output) + biases2
+print(layer2_output)
 
 output = np.dot(weights, inputs) + biases
 
