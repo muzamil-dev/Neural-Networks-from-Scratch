@@ -33,10 +33,10 @@ weights2 = [
 ]
 biases2 = [-1, 2, -0.5]
 
+output = np.dot(weights, inputs) + biases
+
 layer2_output = np.dot(weights2, output) + biases2
 print(layer2_output)
-
-output = np.dot(weights, inputs) + biases
 
 print(output)
 
